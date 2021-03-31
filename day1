@@ -1,4 +1,4 @@
-//Day 1
+//Day 1: parseFloat() toFixed()
 
 /* Takeaways: 
 Uses the parseFloat() to convert a string number to a floating number

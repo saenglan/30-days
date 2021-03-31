@@ -3,17 +3,19 @@
 /* Takeaways: 
 Uses the parseFloat() to convert a string number to a floating number
 Uses toFixed() to set the number of digits after the decimal
+
 */
 
+//Other Input code was above (this is where the arrays came from)
 // Declare second integer, double, and String variables.
 let integerNum;
 let doubleNum;
 let stringNum;
 
     // Read and save an integer, double, and String to your variables.
-integerNum = 12;
-doubleNum = 4.0;
-stringNum = "is the best place to learn and practice coding!";
+integerNum = parseFloat(input_stdin_array[0]);
+doubleNum = parseFloat(input_stdin_array[1]);
+stringNum = input_stdin_array[2];
     // Print the sum of both integer variables on a new line.
 console.log(i+integerNum);
     // Print the sum of the double variables on a new line.

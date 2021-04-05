@@ -1,0 +1,18 @@
+//Split input by lines: input.split('\n')
+
+function processData(input) {
+
+input = input.split('\n')
+
+for(let i = 1; i < input.length; i++){
+    let string = input[i].split('');
+    let even = '';
+    let odd = '';
+        for(let j = 0; j < string.length; j++){
+            if(j%2 === 0){
+                even = even + string[j];
+            }else {odd = odd + string[j]};
+        }
+        console.log(even + ' ' + odd);
+}
+} 

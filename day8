@@ -1,0 +1,16 @@
+function processData(input) {
+    input = input.split("\n");
+    const phonebook = [];
+
+    for (let index = 1; index <= parseInt(input[0]); index++) {
+        const contactArray = input[index].split(" ");
+        phonebook[contactArray[0]] = contactArray[1];
+    }
+    for (let index = (parseInt(input[0]) + 1); index < input.length; index++) {
+        if (phonebook[input[index]]) {
+            console.log(input[index] + "=" + phonebook[input[index]]);
+        } else {
+            console.log("Not found");
+        }
+    }
+}
